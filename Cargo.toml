@@ -1,0 +1,9 @@
+[package]
+name = "simplex-rs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Logging
+env_logger = "0.9.3"
+log = "0.4"
