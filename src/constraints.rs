@@ -9,7 +9,7 @@ pub enum ConstraintType {
     Equal,
 }
 
-#[derive(Clone)]
+#[derive(Clone, Debug)]
 pub struct Constraint<Variable> {
     pub(crate) coefficients: HashMap<Variable, f64>,
     pub(crate) value: f64,

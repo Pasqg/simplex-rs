@@ -1,6 +1,6 @@
 mod matrix;
-mod constraints;
-mod objective;
+pub mod constraints;
+pub mod objective;
 
 use constraints::{Constraint, ConstraintType};
 use log::{debug, info};

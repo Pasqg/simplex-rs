@@ -31,7 +31,7 @@ let constraints = vec![
 let objective = Objective::new(HashMap::from([(x, 3.0), (y, 1.0)]), 0.0, false);
 ```
 
-Then a solution can be find by calling ```SimplexSolver::solve``` with the
+Then a solution can be found by calling ```SimplexSolver::solve``` with the
 specified epsilon (used only for validation of the final solution).
 
 ```
@@ -40,6 +40,8 @@ let solution = solver.solve(1e-7);
 assert_eq!(*solution.get(x).unwrap(), 1.0);
 assert_eq!(*solution.get(y).unwrap(), 1.0);
 ```
+
+See also [simplex_examples](simplex_examples/)
 
 ## License
 
